@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "The future of eventing and stuff.",
   "main": "server.js",
+  "engines": {
+    "nodejs": "0.10.25"
+  },
   "dependencies": {
     "body-parser": "~1.15.2",
     "express": "~4.14.0",
@@ -14,7 +17,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodejs server.js"
   },
   "repository": {
     "type": "git",
