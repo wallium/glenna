@@ -1,0 +1,31 @@
+{
+  "name": "glenna-server",
+  "version": "0.0.0",
+  "description": "The future of eventing and stuff.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "express": "~4.14.0",
+    "es6-promise": "~4.0.5",
+    "cookie-parser": "~1.4.3",
+    "multer": "~1.2.0",
+    "pg": "~6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wallium/glenna.git"
+  },
+  "keywords": [
+    "glenna"
+  ],
+  "author": "William Yang",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/wallium/glenna/issues"
+  }
+}

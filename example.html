@@ -1,11 +1,16 @@
 <html>
   <body>
 
-    <form action="http://127.0.0.1:8081/name" method = "GET">
-      First Name: <input type="text" name="first_name"> <br>
-      Last Name: <input type="text" name="last_name">
+    <form action="http://127.0.0.1:8081/users" method = "POST">
+      id: <input type="text" name="userid"> <br>
+      Username: <input type="text" name="username">
+      Password: <input type="text" name="password">
       <input type="submit" value="Submit">
     </form>
 
+    <form action="http://127.0.0.1:8081/users" method = "GET">
+      Show contents of Users
+      <input type="submit" value="Submit">
+    </form>
   </body>
 </html>
