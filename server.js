@@ -43,9 +43,20 @@ app.post('/users', urlencodedParser, function (req, res) {
     console.log(req.body);
     var i = 0;
     var query = "INSERT INTO USERS(id, username, password) VALUES(" + req.body.userid + ", '" + req.body.username + "', '" + req.body.password + "');";
-    var r = "";
     console.log(query);
     client.query(query);
+  });
+})
+
+app.delete('/users', urlencodedParser, function (req, res) {
+  pg.connect('postgres://wfkyiafdxkqhgx:HlMV9WCE-OWOs7WKXeHai6opi0@ec2-54-243-195-160.compute-1.amazonaws.com:5432/d3je1pifhdpsdp', function(err, client) {
+    if (err) {
+      console.log("Ran into error");
+      throw err;
+    } 
+    console.log(req.body);
+    var i = 0;
+    client.query("DELETE * FROM USERS;");
   });
 })
 
